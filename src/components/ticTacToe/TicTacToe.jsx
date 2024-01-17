@@ -71,7 +71,7 @@ const TicTacToe = () => {
   const reset = () => {
     setLock(false);
     data = ["", "", "", "", "", "", "", "", ""];
-    titleRef.current.innerHTML = "Tic Tac Toe Game in <span>React</span>";
+    titleRef.current.innerHTML = "Tic<span>Tac</span>Toe";
     box_array.map((e) => {
       e.current.innerHTML = "";
     });
@@ -80,7 +80,7 @@ const TicTacToe = () => {
   return (
     <div className="container">
       <h1 className="title" ref={titleRef}>
-        Tic Tac Toe Game in <span>React</span>
+        Tic<span>Tac</span>Toe
       </h1>
       <div className="board">
         <div className="row1">
